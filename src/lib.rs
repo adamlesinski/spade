@@ -24,6 +24,7 @@ mod triangulation;
 
 pub use crate::cdt::{CdtEdge, ConstrainedDelaunayTriangulation};
 pub use crate::delaunay_triangulation::DelaunayTriangulation;
+pub use crate::intersection_iterator::{Intersection, LineIntersectionIterator};
 pub use crate::point::{HasPosition, Point2, SpadeNum};
 
 pub use crate::delaunay_core::math::{
