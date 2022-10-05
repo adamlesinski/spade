@@ -23,7 +23,7 @@ use serde_crate::{Deserialize, Serialize};
     derive(Serialize, Deserialize),
     serde(crate = "serde_crate")
 )]
-pub struct CdtEdge<UE>(bool, UE);
+pub struct CdtEdge<UE>(pub bool, UE);
 
 impl<UE> CdtEdge<UE> {
     /// Returns `true` if this edge is a constraint edge.
